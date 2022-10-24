@@ -1,0 +1,17 @@
+{{!-- {{#each this}} --}}
+<div class='wrapper'><img
+    class='flag'
+    src='{{flags.svg}}'
+    alt='{{name.official}}'
+    width='120'
+    height='80'
+  />
+  <h1>{{name.official}}</h1>
+  </div>
+<ul>
+  <li class='parameter'>Capital: <span class='value'>{{capital}}</span></li>
+  <li class='parameter'>Population: <span class='value'>{{population}}</span></li>
+  <li class='parameter'>Languages: <span class='value'>{{#each languages}}
+        {{this}}{{#unless @last}}, {{/unless}}{{/each}}</span></li>
+</ul>
+{{!-- {{/each}} --}}
